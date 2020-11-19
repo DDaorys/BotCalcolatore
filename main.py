@@ -1,6 +1,5 @@
 import requests
 import random
-
 url = "https://api.telegram.org/bot1406557101:AAEfpvHkwFKUUAVd-t-0mTQry30yC3VvO4s/"
 
 # create function that get chat id
@@ -39,8 +38,9 @@ def main():
                 _1 = random.randint(1, 6)
                 _2 = random.randint(1, 6)
                 _3 = random.randint(1, 6)
-                send_message(get_chat_id(update), 'You have' + str(_1) + 'and ' + str(_2) + str(_3) + '!\n Your is ' + str(_1 + _2 + _3) + '!!!!')
+                send_message(get_chat_id(update), 'You have ' + str(_1) + ' and ' + str(_2) + ' and ' + str(_3) + '!\n Your is ' + str(_1 + _2 + _3) + '!!!!')
             else:
-                send_message(get_chat_id(update)), "Sorry Not Understand what you inputted"
+                send_message(get_chat_id(update), "Sorry Not Understand what you inputted")
+            update_id += 1
 
 main()
